@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class TheConnection
 {
 	public static String USERNAME = new String("root");
-    public static String PASSWORD = new String("password");
+    public static String PASSWORD = new String("richard1998");
 	public static String DB_URL = new String("jdbc:mysql://localhost:3306/");
 	public static String JDBC_DRIVER = new String("com.mysql.jdbc.Driver");
 	
@@ -54,9 +54,7 @@ public class TheConnection
 			PreparedStatement stmt = con.prepareStatement(
 					"USE milestone3");
 			
-			Statement pstmt = con.prepareStatement(
-					  "SELECT branchName " + 
-					  "FROM Branches;");
+			Statement pstmt = con.prepareStatement("SELECT * " + "FROM branchNames;");
 
 			// Do all updates in a single transaction
 			con.setAutoCommit(false);
@@ -66,8 +64,7 @@ public class TheConnection
 
 			// Submit the statement
 
-			ResultSet rs = stmt.executeQuery("SELECT branchName " + 
-						  "FROM Branches;");
+			ResultSet rs = stmt.executeQuery("SELECT * " + "FROM branchNames;");
 				
 			while ( rs.next() ) 
 			{ 	String name = rs.getString("branchName");
@@ -940,12 +937,12 @@ public class TheConnection
 					  "SELECT p.name, p.productID " + 
 					  "FROM Products p, Makes m " + 
 					  "WHERE p.productID = m.productID " + 
-					  "AND m.branchName LIKE '%Electronics%' " + 
+					  "AND m.branchName LIKE '%" + input +"%' " + 
 					  "AND p.costToMake>= ALL " + 
 					  "(SELECT p2.costToMake " + 
 					  "FROM Products p2, Makes m2 " + 
 					  "WHERE p2.productID = m2.productID " + 
-					  "AND m2.branchName LIKE '%Electronics%');");
+					  "AND m2.branchName LIKE '%" + input +"%');");
 
 			// Do all updates in a single transaction
 			con.setAutoCommit(false);
@@ -959,12 +956,12 @@ public class TheConnection
 					  "SELECT p.name, p.productID " + 
 					  "FROM Products p, Makes m " + 
 					  "WHERE p.productID = m.productID " + 
-					  "AND m.branchName LIKE '%Electronics%' " + 
+					  "AND m.branchName LIKE '%" + input +"%' " + 
 					  "AND p.costToMake>= ALL " + 
 					  "(SELECT p2.costToMake " + 
 					  "FROM Products p2, Makes m2 " + 
 					  "WHERE p2.productID = m2.productID " + 
-					  "AND m2.branchName LIKE '%Electronics%');");
+					  "AND m2.branchName LIKE '%" + input +"%');");
 				
 			while ( rs.next() ) 
 			{ 	String name = rs.getString("p.name");
@@ -1038,9 +1035,7 @@ public class TheConnection
 			PreparedStatement stmt = con.prepareStatement(
 					"USE milestone3");
 			
-			Statement pstmt = con.prepareStatement(
-					  "SELECT branchName, dateCreated, cost, profit " + 
-					  "FROM Branches;");
+			Statement pstmt = con.prepareStatement("SELECT * " + "FROM branchInfo;");
 
 			// Do all updates in a single transaction
 			con.setAutoCommit(false);
@@ -1050,10 +1045,7 @@ public class TheConnection
 
 			// Submit the statement
 
-			ResultSet rs = stmt.executeQuery(
-					  "SELECT branchName, dateCreated, cost, profit " + 
-					  "FROM Branches;");
-				
+			ResultSet rs = stmt.executeQuery("SELECT * " + "FROM branchInfo;");
 			while ( rs.next() ) 
 			{ 	String name = rs.getString("branchName");
 				String date = rs.getString("dateCreated");
