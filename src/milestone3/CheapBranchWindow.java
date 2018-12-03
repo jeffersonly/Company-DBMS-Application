@@ -19,7 +19,7 @@ public class CheapBranchWindow {
 	{
 		//Creates a new Frame
 		JFrame frame = new JFrame();
-		
+		frame.setTitle("Cheapest Product");
 		//Set frame layout
 		frame.setLayout(new FlowLayout());
 		

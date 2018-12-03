@@ -19,6 +19,7 @@ public class InvestorWindow {
 	{
 		//Creates a new Frame
 		JFrame frame = new JFrame();
+		frame.setTitle("Investors");
 		
 		//Set frame layout
 		frame.setLayout(new FlowLayout());

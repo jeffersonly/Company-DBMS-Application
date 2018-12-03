@@ -19,6 +19,7 @@ public class ManagerWindow {
 	{
 		//Creates a new Frame
 		JFrame frame = new JFrame();
+		frame.setTitle("Managers");
 		
 		//Set frame layout
 		frame.setLayout(new FlowLayout());

@@ -1,13 +1,16 @@
 package milestone3;
 
+import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class MainWindow {
-	
 	public static void main(String[] args)
 	{
 		create();
@@ -20,8 +23,10 @@ public class MainWindow {
 		
 		//Set frame layout
 		frame.setLayout(new FlowLayout());
-		
-		JLabel header = new JLabel("Evercreek Company Database Menu:");
+		//JLabel header = new JLabel("Evercreek Company Database Menu:");
+		//header.setFont(new Font("Ariel", Font.BOLD, 20));
+		String s = "Evercreek Company Database Menu";
+		frame.setTitle(s);
 		
 		//Make buttons
 		JButton companyButton = new JButton("Company");
@@ -30,9 +35,17 @@ public class MainWindow {
 		JButton productButton = new JButton("Product");
 		JButton customerButton = new JButton("Customer");
 		JButton stockButton = new JButton("Stock");
-	
+		
+		//Sets size for buttons
+		companyButton.setPreferredSize(new Dimension(100, 50));
+		employeeButton.setPreferredSize(new Dimension(100, 50));
+		branchButton.setPreferredSize(new Dimension(100, 50));
+		productButton.setPreferredSize(new Dimension(100, 50));
+		customerButton.setPreferredSize(new Dimension(100, 50));
+		stockButton.setPreferredSize(new Dimension(100, 50));
+		
 		//Add buttons
-		frame.add(header);
+		//frame.add(header);
 		frame.add(companyButton);
 		frame.add(employeeButton);
 		frame.add(branchButton);
@@ -53,8 +66,6 @@ public class MainWindow {
 		productButton.addActionListener(event -> new ProductWindow().create());
 		customerButton.addActionListener(event -> new CustomerWindow().create());
 		stockButton.addActionListener(event -> new StockWindow().create());
-		
-		
 		
 	}
 	

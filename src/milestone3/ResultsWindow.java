@@ -24,12 +24,13 @@ public class ResultsWindow {
 	{
 		//Creates a new Frame
 		JFrame frame = new JFrame();
+		frame.setTitle("Results");
 		
 		//Set frame layout
 		frame.setLayout(new GridLayout(input.size()+1,1));
 		
-		JLabel header = new JLabel("Results:");
-		frame.add(header);
+		//JLabel header = new JLabel("Results:");
+		//frame.add(header);
 		
 		if(input != null)
 		{

@@ -1,5 +1,6 @@
 package milestone3;
 
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.util.ArrayList;
@@ -23,7 +24,8 @@ public class CompanyWindow {
 		//Set frame layout
 		frame.setLayout(new GridLayout(4,2));
 		
-		JLabel header = new JLabel("Company Menu:");
+		//JLabel header = new JLabel("Company Menu:");
+		frame.setTitle("Company Menu");
 		
 		//Make buttons
 		JButton allBranchesButton = new JButton("Get all Branch Names");
@@ -34,8 +36,17 @@ public class CompanyWindow {
 		JButton priceCost2Button = new JButton("Most Costly Unpopular Product");
 		JButton distinctButton = new JButton("Distinct Employees, Managers, and Investors");
 	
+		//Styling for buttons sizing
+		allBranchesButton.setPreferredSize(new Dimension(300, 50));
+		yearButton.setPreferredSize(new Dimension(300, 50));
+		salaryBranchButton.setPreferredSize(new Dimension(300, 50));
+		priceCostButton.setPreferredSize(new Dimension(300, 50));
+		investorButton.setPreferredSize(new Dimension(300, 50));
+		priceCost2Button.setPreferredSize(new Dimension(300, 50));
+		distinctButton.setPreferredSize(new Dimension(300, 50));
+		
 		//Add buttons
-		frame.add(header);
+		//frame.add(header);
 		frame.add(allBranchesButton);
 		frame.add(yearButton);
 		frame.add(salaryBranchButton);

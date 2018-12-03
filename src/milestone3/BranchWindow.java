@@ -1,5 +1,6 @@
 package milestone3;
 
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.util.ArrayList;
@@ -19,11 +20,11 @@ public class BranchWindow {
 	{
 		//Creates a new Frame
 		JFrame frame = new JFrame();
-		
+		frame.setTitle("Branch Menu");
 		//Set frame layout
 		frame.setLayout(new GridLayout(3,2));
 		
-		JLabel header = new JLabel("Branch Menu:");
+		//JLabel header = new JLabel("Branch Menu:");
 		
 		//Make buttons
 		JButton workBranchButton = new JButton("Employees of Branch");
@@ -31,8 +32,14 @@ public class BranchWindow {
 		JButton cheapBranchButton = new JButton("Cheapest Product per Branch");
 		JButton expProductButton = new JButton("Orders with most expensive Branch product");
 	
+		//Button size styling
+		workBranchButton.setPreferredSize(new Dimension(100, 50));
+		branchInfoButton.setPreferredSize(new Dimension(100, 50));
+		cheapBranchButton.setPreferredSize(new Dimension(100, 50));
+		expProductButton.setPreferredSize(new Dimension(100, 50));
+		
 		//Add buttons
-		frame.add(header);
+		//frame.add(header);
 		frame.add(workBranchButton);
 		frame.add(branchInfoButton);
 		frame.add(cheapBranchButton);
