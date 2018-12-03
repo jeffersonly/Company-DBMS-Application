@@ -23,7 +23,7 @@ public class YearWindow {
 		//Set frame layout
 		frame.setLayout(new FlowLayout());
 		
-		JLabel header = new JLabel("Submit Years worked to get the list of employees and managers who worked for that many years:");
+		JLabel header = new JLabel("Submit Years worked to get the number of employees and managers who worked for that many years:");
 		
 		
 		//TextField
