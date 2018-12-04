@@ -2,8 +2,6 @@ package milestone3;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.StringTokenizer;
-
 
 public class TheConnection
 {

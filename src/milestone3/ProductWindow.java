@@ -2,11 +2,8 @@ package milestone3;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 public class ProductWindow {
 	
@@ -40,9 +37,9 @@ public class ProductWindow {
 		frame.pack();
 		frame.setVisible(true);
 		
-		
 		//Adds actions
-		productBuyButton.addActionListener(event -> new ProductBuyWindow().create());
+		new ProductBuyWindow();
+		productBuyButton.addActionListener(event -> ProductBuyWindow.create());
 
 	}
 	

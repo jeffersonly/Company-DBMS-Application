@@ -2,7 +2,6 @@ package milestone3;
 
 import java.awt.FlowLayout;
 import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -19,7 +18,7 @@ public class SalaryBranchWindow {
 	{
 		//Creates a new Frame
 		JFrame frame = new JFrame();
-		
+		frame.setTitle("Salaries from a Branch");
 		//Set frame layout
 		frame.setLayout(new FlowLayout());
 		
@@ -50,7 +49,8 @@ public class SalaryBranchWindow {
 				TheConnection con = new TheConnection();
 				System.out.println("Success");
 				ArrayList<String> results = con.queryI(input);
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 			}
 			catch (Exception e) {
 				// TODO Auto-generated catch block

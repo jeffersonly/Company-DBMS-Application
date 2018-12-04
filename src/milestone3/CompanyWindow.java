@@ -1,13 +1,10 @@
 package milestone3;
 
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 public class CompanyWindow {
 	
@@ -67,7 +64,8 @@ public class CompanyWindow {
 				TheConnection con = new TheConnection();
 				ArrayList<String> results = con.queryB();
 			
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 				
 			}
 			catch (ClassNotFoundException e) {
@@ -76,15 +74,18 @@ public class CompanyWindow {
 			}
 		});
 		
-		yearButton.addActionListener(event -> new YearWindow().create());
-		salaryBranchButton.addActionListener(event -> new SalaryBranchWindow().create());
+		new YearWindow();
+		yearButton.addActionListener(event -> YearWindow.create());
+		new SalaryBranchWindow();
+		salaryBranchButton.addActionListener(event -> SalaryBranchWindow.create());
 		
 		priceCostButton.addActionListener(event -> {
 			try {
 				
 				TheConnection con = new TheConnection();
 				ArrayList<String> results = con.queryJ();
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 				
 			}
 			catch (ClassNotFoundException e) {
@@ -99,7 +100,8 @@ public class CompanyWindow {
 				
 				TheConnection con = new TheConnection();
 				ArrayList<String> results = con.queryK();
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 				
 			}
 			catch (ClassNotFoundException e) {
@@ -114,7 +116,8 @@ public class CompanyWindow {
 				
 				TheConnection con = new TheConnection();
 				ArrayList<String> results = con.queryL();
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 				
 			}
 			catch (ClassNotFoundException e) {
@@ -129,7 +132,8 @@ public class CompanyWindow {
 				
 				TheConnection con = new TheConnection();
 				ArrayList<String> results = con.queryO();
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 				
 			}
 			catch (ClassNotFoundException e) {

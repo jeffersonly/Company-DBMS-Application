@@ -3,10 +3,8 @@ package milestone3;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 public class CustomerWindow {
 	
@@ -46,7 +44,8 @@ public class CustomerWindow {
 				
 				TheConnection con = new TheConnection();
 				ArrayList<String> results = con.queryG();
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 				
 			}
 			catch (Exception e) {

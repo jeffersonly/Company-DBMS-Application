@@ -2,11 +2,8 @@ package milestone3;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 public class StockWindow {
 	
@@ -20,10 +17,9 @@ public class StockWindow {
 		//Creates a new Frame
 		JFrame frame = new JFrame();
 		frame.setTitle("Stock Menu");
+		
 		//Set frame layout
 		frame.setLayout(new FlowLayout());
-		
-		//JLabel header = new JLabel("Stock Menu:");
 		
 		//Make buttons
 		JButton investorButton = new JButton("Get Stock(s) of Specific Investor");
@@ -32,16 +28,15 @@ public class StockWindow {
 		investorButton.setPreferredSize(new Dimension(300, 50));
 		
 		//Add buttons
-		//frame.add(header);
 		frame.add(investorButton);
 		
 		//Makes the frame open with the given buttons
 		frame.pack();
 		frame.setVisible(true);
 		
-		
 		//Adds actions
-		investorButton.addActionListener(event -> new InvestorWindow().create());
+		new InvestorWindow();
+		investorButton.addActionListener(event -> InvestorWindow.create());
 
 	}
 	

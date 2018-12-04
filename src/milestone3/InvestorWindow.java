@@ -2,7 +2,6 @@ package milestone3;
 
 import java.awt.FlowLayout;
 import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -26,7 +25,6 @@ public class InvestorWindow {
 		
 		JLabel header = new JLabel("Submit Investor ID:");
 		
-		
 		//TextField
 		JTextField investorID = new JTextField("",10);
 		
@@ -49,9 +47,10 @@ public class InvestorWindow {
 				int input = Integer.parseInt(investorID.getText());
 				
 				TheConnection con = new TheConnection();
-				System.out.println("Success");
+				//System.out.println("Success");
 				ArrayList<String> results = con.queryF(input);
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 			}
 			catch(NumberFormatException e)
 			{

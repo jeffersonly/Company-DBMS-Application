@@ -2,11 +2,8 @@ package milestone3;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 public class EmployeeWindow {
 	
@@ -24,8 +21,6 @@ public class EmployeeWindow {
 		//Set frame layout
 		frame.setLayout(new FlowLayout());
 		
-		//JLabel header = new JLabel("Employee Menu:");
-		
 		//Make buttons
 		JButton managerButton = new JButton("Works for specific Manager");
 	
@@ -33,7 +28,6 @@ public class EmployeeWindow {
 		managerButton.setPreferredSize(new Dimension(250, 50));
 		
 		//Add buttons
-		//frame.add(header);
 		frame.add(managerButton);
 		
 		//Makes the frame open with the given buttons
@@ -41,8 +35,10 @@ public class EmployeeWindow {
 		frame.setVisible(true);
 		
 		
+		new ManagerWindow();
 		//Adds actions
-		managerButton.addActionListener(event -> new ManagerWindow().create());
+		managerButton.addActionListener(event -> ManagerWindow.create());
+		
 	}
 	
 }

@@ -1,13 +1,10 @@
 package milestone3;
 
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 public class BranchWindow {
 	
@@ -24,8 +21,6 @@ public class BranchWindow {
 		//Set frame layout
 		frame.setLayout(new GridLayout(3,2));
 		
-		//JLabel header = new JLabel("Branch Menu:");
-		
 		//Make buttons
 		JButton workBranchButton = new JButton("Employees of Branch");
 		JButton branchInfoButton = new JButton("Branch Info");
@@ -33,13 +28,12 @@ public class BranchWindow {
 		JButton expProductButton = new JButton("Orders with most expensive Branch product");
 	
 		//Button size styling
-		workBranchButton.setPreferredSize(new Dimension(100, 50));
-		branchInfoButton.setPreferredSize(new Dimension(100, 50));
-		cheapBranchButton.setPreferredSize(new Dimension(100, 50));
-		expProductButton.setPreferredSize(new Dimension(100, 50));
+		workBranchButton.setPreferredSize(new Dimension(300, 50));
+		branchInfoButton.setPreferredSize(new Dimension(300, 50));
+		cheapBranchButton.setPreferredSize(new Dimension(300, 50));
+		expProductButton.setPreferredSize(new Dimension(300, 50));
 		
 		//Add buttons
-		//frame.add(header);
 		frame.add(workBranchButton);
 		frame.add(branchInfoButton);
 		frame.add(cheapBranchButton);
@@ -50,15 +44,17 @@ public class BranchWindow {
 		frame.setVisible(true);
 		
 		
+		new WorkBranchWindow();
 		//Adds actions
-		workBranchButton.addActionListener(event -> new WorkBranchWindow().create());
+		workBranchButton.addActionListener(event -> WorkBranchWindow.create());
 		
 		branchInfoButton.addActionListener(event -> {
 			try {
 				
 				TheConnection con = new TheConnection();
 				ArrayList<String> results = con.queryD();
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 				
 			}
 			catch (ClassNotFoundException e) {
@@ -68,9 +64,11 @@ public class BranchWindow {
 			
 		});
 		
-		cheapBranchButton.addActionListener(event -> new CheapBranchWindow().create());
+		new CheapBranchWindow();
+		cheapBranchButton.addActionListener(event -> CheapBranchWindow.create());
 		
-		expProductButton.addActionListener(event -> new ExpProductWindow().create());
+		new ExpProductWindow();
+		expProductButton.addActionListener(event -> ExpProductWindow.create());
 	}
 	
 }

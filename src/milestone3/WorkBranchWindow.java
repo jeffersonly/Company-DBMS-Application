@@ -2,7 +2,6 @@ package milestone3;
 
 import java.awt.FlowLayout;
 import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -19,6 +18,7 @@ public class WorkBranchWindow {
 	{
 		//Creates a new Frame
 		JFrame frame = new JFrame();
+		frame.setTitle("Find branch employees");
 		
 		//Set frame layout
 		frame.setLayout(new FlowLayout());
@@ -50,7 +50,8 @@ public class WorkBranchWindow {
 				TheConnection con = new TheConnection();
 				System.out.println("Success");
 				ArrayList<String> results = con.queryC(input);
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 			}
 			catch (Exception e) {
 				// TODO Auto-generated catch block

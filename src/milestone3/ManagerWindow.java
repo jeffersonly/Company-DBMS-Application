@@ -2,7 +2,6 @@ package milestone3;
 
 import java.awt.FlowLayout;
 import java.util.ArrayList;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -49,9 +48,10 @@ public class ManagerWindow {
 				int input = Integer.parseInt(managerID.getText());
 				
 				TheConnection con = new TheConnection();
-				System.out.println("Success");
+				//System.out.println("Success");
 				ArrayList<String> results = con.queryA(input);
-				new ResultsWindow().create(results);
+				new ResultsWindow();
+				ResultsWindow.create(results);
 			}
 			catch(NumberFormatException e)
 			{
