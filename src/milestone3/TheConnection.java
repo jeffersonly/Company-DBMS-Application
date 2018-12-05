@@ -2,13 +2,16 @@ package milestone3;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.StringTokenizer;
+
 
 public class TheConnection
 {
 	public static String USERNAME = new String("root");
-    public static String PASSWORD = new String("Password1");
+    public static String PASSWORD = new String("password");
 	public static String DB_URL = new String("jdbc:mysql://localhost:3306/");
-	public static String JDBC_DRIVER = new String("com.mysql.cj.jdbc.Driver");
+	public static String JDBC_DRIVER = new String("com.mysql.jdbc.Driver");
+	
 	public ArrayList<String> branches;
 	
 	public TheConnection()
@@ -1419,7 +1422,7 @@ public class TheConnection
 					  "			WHERE productID IN ( " + 
 					  "				SELECT productID  " + 
 					  "				FROM Makes\r\n" + 
-					  "				WHERE branchName LIKE '%Software%')))) " + 
+					  "				WHERE branchName LIKE '%"+input+"%')))) " + 
 					  "	AND Has.customerID = Customers.customerID;");
 
 			// Do all updates in a single transaction
@@ -1441,11 +1444,11 @@ public class TheConnection
 					  "		FROM Products " + 
 					  "		WHERE priceSold = ( " + 
 					  "			SELECT MAX(priceSold) " + 
-					  "			FROM Products " + 
+					  "			FROM Products \r\n" + 
 					  "			WHERE productID IN ( " + 
 					  "				SELECT productID  " + 
-					  "				FROM Makes" + 
-					  "				WHERE branchName LIKE '%" + input + "%')))) " + 
+					  "				FROM Makes\r\n" + 
+					  "				WHERE branchName LIKE '%"+input+"%')))) " + 
 					  "	AND Has.customerID = Customers.customerID;");
 				
 			while ( rs.next() ) 

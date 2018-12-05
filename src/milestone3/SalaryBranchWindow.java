@@ -47,10 +47,19 @@ public class SalaryBranchWindow {
 				String input = branch.getText();
 				
 				TheConnection con = new TheConnection();
-				System.out.println("Success");
-				ArrayList<String> results = con.queryI(input);
-				new ResultsWindow();
-				ResultsWindow.create(results);
+				if(!input.trim().equals(""))
+				{
+					ArrayList<String> results = con.queryI(input);
+					new ResultsWindow();
+					ResultsWindow.create(results);
+				}
+				else
+				{
+					JFrame frame1 = new JFrame();
+					frame1.add(new JLabel("Please enter a value"));
+					frame1.pack();
+					frame1.setVisible(true);
+				}
 			}
 			catch (Exception e) {
 				// TODO Auto-generated catch block
