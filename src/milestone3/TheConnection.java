@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class TheConnection
 {
 	public static String USERNAME = new String("root");
-    public static String PASSWORD = new String("password");
+    public static String PASSWORD = new String("richard1998");
 	public static String DB_URL = new String("jdbc:mysql://localhost:3306/");
 	public static String JDBC_DRIVER = new String("com.mysql.jdbc.Driver");
 	
