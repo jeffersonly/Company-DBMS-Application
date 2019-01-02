@@ -1,0 +1,30 @@
+12000	"James"	"Deely"	1984-01-01	"Mulberry St."	"Joseph City"	95121	"(408)123-4560"	"james.deely@evercreek.org"	50000	2001-12-30
+12001	"Michelle"	"Jackson"	1985-02-02	"Rainbow Rd."	"Frank City"	95133	"(408)123-4561"	"michelle.jackson@evercreek.org"	51000	2018-08-22
+12002	"Eric"	"Nguyen"	1986-03-03	"Blanchard Dr."	"City of Angels"	95173	"(408)123-4562"	"eric.nguyen@evercreek.org"	52000	2017-08-22
+12003	"Richard"	"Pham"	1987-04-04	"Capitol Ave."	"Joseph City"	96372	"(408)123-4563"	"richard.pham@evercreek.org"	53000	2018-07-21
+12004	"Jefferson"	"Ly"	1988-05-05	"Purple St."	"Frank City"	93728	"(408)123-4564"	"jefferson.ly@evercreek.org"	54000	2018-06-20
+12005	"Andrew"	"Pham"	1989-06-06	"White St."	"Frank City"	93726	"(408)123-4565"	"andrew.pham@evercreek.org"	56000	2013-12-20
+12006	"Henry"	"Nguyen"	1990-07-07	"Red St."	"Frank City"	93725	"(408)123-4566"	"henry.nguyen@evercreek.org"	58000	2012-12-21
+12007	"Andrew"	"Lu"	1991-08-08	"1st St."	"City of Angels"	93746	"(408)123-4567"	"andrew.lu@evercreek.org"	60000	1991-08-12
+12008	"Matt"	"Steele"	1990-09-09	"2nd St."	"City of Angels"	92617	"(408)123-4568"	"matt.steele@evercreek.org"	48000	2010-06-15
+12009	"David"	"Taylor"	1989-10-10	"3rd St."	"City of Angels"	92716	"(408)123-4569"	"david.taylor@evercreek.org"	46000	1997-02-28
+12010	"Jovi"	"Hen"	1988-11-11	"Utopia Ave."	"Golden City"	92817	"(408)123-4550"	"jovi.hen@evercreek.org"	62000	2011-03-15
+12011	"Richard"	"Ngo"	1987-12-12	"Golden Rd."	"Golden City"	94837	"(408)123-4551"	"richard.ngo@evercreek.org"	66000	2014-01-01
+12012	"Christian"	"Pecson"	1979-01-12	"Holly Ave."	"Golden City"	91821	"(408)123-4552"	"christian.pecson@evercreek.org"	68000	2012-08-12
+12013	"Kim"	"Nguyen"	1978-02-13	"Wood Ave."	"Frank City"	93728	"(408)123-4553"	"kim.nguyen@evercreek.org"	80000	2012-09-24
+12014	"Calvin"	"Ly"	1977-03-14	"Silver Rd."	"Frank City"	93726	"(408)123-4554"	"calvin.ly@evercreek.org"	72000	2015-02-12
+12015	"Habib"	"Soratha"	1976-04-15	"Bronze Rd."	"Frank City"	93725	"(408)123-4555"	"habib.soratha@evercreek.org"	90000	2017-05-30
+12016	"Nick"	"Anvari"	1975-05-16	"Branch Dr."	"Frank City"	95133	"(408)123-4556"	"nick.anvari@evercreek.org"	64000	2018-03-12
+12017	"Danny"	"Nuch"	1974-06-17	"Low Rd."	"City of Angels"	95173	"(408)123-4557"	"danny.nuch@evercreek.org"	45000	2009-05-11
+12018	"Mackelvin"	"Malabanan"	1973-07-18	"High Rd."	"Golden City"	92817	"(408)123-4558"	"mackelvin.malabanan@evercreek.org"	32000	2018-08-22
+12019	"Joseph"	"Attar"	1972-08-19	"Upper Ave."	"Golden City"	94837	"(408)123-4559"	"joseph.attar@evercreek.org"	21000	2017-08-22
+12020	"Abraham"	"Washington"	1971-09-20	"Lower Ave."	"Golden City"	91821	"(408)123-4540"	"abraham.washington@evercreek.org"	40000	2018-07-21
+12021	"Michael"	"Pham"	1970-10-21	"Gottlieb Rd."	"Joseph City"	95937	"(408)123-4541"	"michael.pham@evercreek.org"	65000	2018-06-20
+12022	"Mark"	"Thompson"	1971-11-22	"Jackson Ave."	"Joseph City"	95121	"(408)123-4542"	"mark.thompson@evercreek.org"	63000	2013-12-20
+12023	"Wilton"	"Chen"	1972-12-23	"Clemence Ave."	"Joseph City"	96372	"(408)123-4543"	"wilton.chen@evercreek.org"	61000	2012-12-21
+12024	"Brix"	"Aguinaldo"	1980-01-23	"McKinley Ave."	"Frank City"	93728	"(408)123-4544"	"brix.aguinaldo@evercreek.org"	45000	2001-09-12
+12025	"Joanna"	"Bui"	1981-02-24	"Williams St."	"Frank City"	93726	"(408)123-4545"	"joanna.bui@evercreek.org"	47000	2012-09-24
+12026	"Stacy"	"Pham"	1982-03-25	"Jeon Ave."	"Frank City"	93725	"(408)123-4546"	"stacy.pham@evercreek.org"	49000	2005-02-12
+12027	"Ibarra"	"Garcia"	1983-04-26	"Angel Rd."	"City of Angels"	93746	"(408)123-4547"	"ibarra.garcia@evercreek.org"	59000	1995-05-30
+12028	"Randy"	"Martinez"	1984-05-27	"Schaumburg Rd."	"City of Angels"	92617	"(408)123-4548"	"randy.martinez@evercreek.org"	57000	2008-03-12
+12029	"Joseph"	"Lee"	1985-06-28	"Chicago Ave."	"City of Angels"	92716	"(408)123-4549"	"joseph.lee@evercreek.org"	55000	2009-05-11

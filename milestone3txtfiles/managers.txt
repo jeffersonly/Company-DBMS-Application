@@ -1,0 +1,15 @@
+13000	"Anna"	"Tran"	1975-05-16	"Red St."	"Frank City"	93725	"(408)123-4005"	"anna.tran@evercreek.org"	78000	"Software"	2001-12-30
+13001	"Danny"	"Nguyen"	1974-06-17	"1st St."	"City of Angels"	93746	"(408)123-4006"	"danny.nguyen@evercreek.org"	95000	"Software"	2018-08-22
+13002	"Thoai"	"Dat"	1973-07-18	"2nd St."	"City of Angels"	92617	"(408)123-4007"	"thoai.dat@evercreek.org"	93000	"Software"	2017-08-22
+13003	"Thai"	"Ly"	1972-08-19	"3rd St."	"City of Angels"	92716	"(408)123-4008"	"thai.ly@evercreek.org"	94000	"Hardware"	2018-07-21
+13004	"Tommy"	"Ngo"	1971-09-20	"Utopia Ave."	"Golden City"	92817	"(408)123-4009"	"tommy.ngo@evercreek.org"	112000	"Hardware"	2018-06-20
+13005	"Tommy"	"Rich"	1970-10-21	"Golden Rd."	"Golden City"	94837	"(408)123-4010"	"tommy.rich@evercreek.org"	200000	"Data Analysis"	2013-12-20
+13006	"Jeff"	"Weins"	1971-11-22	"Holly Ave."	"Golden City"	91821	"(408)123-4011"	"jeff.weins@evercreek.org"	575000	"Data Analysis"	2012-12-21
+13007	"Steve"	"Jobs"	1972-12-23	"Wood Ave."	"Frank City"	93728	"(408)123-4012"	"steve.jobs@evercreek.org"	75000	"Manufacturing"	1991-08-12
+13008	"Bill"	"Gates"	1980-01-23	"Silver Rd."	"Frank City"	93726	"(408)123-4013"	"bill.gates@evercreek.org"	92000	"Manufacturing"	2010-06-15
+13009	"Simon"	"Sinek"	1981-02-24	"Bronze Rd."	"Frank City"	93725	"(408)123-4014"	"simon.sinek@evercreek.org"	100000	"Electronics"	1997-02-28
+13010	"Walt"	"Disney"	1982-03-25	"Branch Dr."	"Frank City"	95133	"(408)123-4015"	"walt.disney@evercreek.org"	132000	"Electronics"	2011-03-15
+13011	"Steve"	"Suarez"	1983-04-26	"Low Rd."	"City of Angels"	95173	"(408)123-4016"	"steve.suarez@evercreek.org"	143000	"Sales"	2014-01-01
+13012	"Ben"	"Khek"	1984-05-27	"High Rd."	"Golden City"	92817	"(408)123-4017"	"ben.khek@evercreek.org"	154000	"Sales"	2012-08-12
+13013	"Dan"	"Kho"	1985-06-28	"Upper Ave."	"Golden City"	94837	"(408)123-4018"	"dan.kho@evercreek.org"	82000	"HR"	2018-06-20
+95192	"Tina"	"White"	1990-07-07	"Lower Ave."	"Golden City"	91821	"(408)123-4019"	"tina.white@evercreek.org"	80000	"HR"	2013-12-20

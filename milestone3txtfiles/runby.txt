@@ -1,0 +1,15 @@
+"Software"	13000
+"Software"	13001
+"Software"	13002
+"Hardware"	13003
+"Hardware"	13004
+"Data Analysis"	13005
+"Data Analysis"	13006
+"Manufacturing"	13007
+"Manufacturing"	13008
+"Electronics"	13009
+"Electronics"	13010
+"Sales"	13011
+"Sales"	13012
+"HR"	13013
+"HR"	95192

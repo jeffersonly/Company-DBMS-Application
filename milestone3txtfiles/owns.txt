@@ -1,0 +1,29 @@
+"Hardware"	21900
+"Software"	21901
+"Hardware"	21902
+"Data Analysis"	21903
+"Software"	21904
+"Manufacturing"	21905
+"Manufacturing"	21906
+"Hardware"	21907
+"Software"	21908
+"Hardware"	21909
+"Data Analysis"	21910
+"Software"	21911
+"Manufacturing"	21912
+"Manufacturing"	21913
+"Hardware"	21914
+"Software"	21915
+"Hardware"	21916
+"Data Analysis"	21917
+"Software"	21918
+"Manufacturing"	21919
+"Manufacturing"	21920
+"Hardware"	21921
+"Software"	21922
+"Hardware"	21923
+"Data Analysis"	21924
+"Software"	21925
+"Manufacturing"	21926
+"Manufacturing"	21927
+"Hardware"	21928
